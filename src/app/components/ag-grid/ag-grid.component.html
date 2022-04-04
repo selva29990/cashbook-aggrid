@@ -1,0 +1,10 @@
+    <ag-grid-angular #agGrid
+    class="grid ag-theme-alpine"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs" rowSelection="multiple"
+    [defaultColDef] = "defaultColDef"
+    [autoGroupColumnDef] = "autoGroupColumnDef">
+</ag-grid-angular>
+
+<button mat-raised-button color="accent"
+(click)="getSelectedRows()">Get Selected Rows</button>
